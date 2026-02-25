@@ -80,7 +80,7 @@ class UnoView:
         print(*out, sep='\n')
     
     def display_bot_move(self, name: str, value: Value, color: Color) -> None:
-        print(f'> {name} played a {self.COL[color]} {self.VAL[value]}!')
+        print(f'> {name} played {"a" if self.COL[color] != "Orange" else "an"} {self.COL[color]} {self.VAL[value]}!')
         print()
         
     def display_bot_draw(self, name: str) -> None:
